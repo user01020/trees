@@ -57,11 +57,15 @@ class BinTree{
         BinTree(){}
         BinTree(istream &is)
         {
+        	cout << "create bin tree\n";
             int key;
+            cout << "list of keys:\n";
             while(is >> key)
             {
+            	cout << key << " ";
                 this->add_node(key);
             }
+            cout << endl;
         }
         int printFatherAndSons(Node * node)
         {
